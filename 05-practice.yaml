@@ -5,7 +5,7 @@
     - name: username
       promt: "Please enter the username"
       private: false
-  vars_prompt:
+
     - name: password
       promt: "Please enter the password"
       private: true
