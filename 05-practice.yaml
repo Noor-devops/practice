@@ -2,13 +2,13 @@
   hosts: localhost
   connection: local
   vars_prompt:
-    - name: username
-      promt: "Please enter the username"
-      private: false
+  - name: username
+    promt: "Please enter the username"
+    private: false
 
-    - name: password
-      promt: "Please enter the password"
-      private: true
+  - name: password
+    promt: "Please enter the password"
+    private: true
   tasks:
   - name: demo
     debug:
