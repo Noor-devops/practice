@@ -1,0 +1,7 @@
+- name: demo on inventroy var]
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: demo 
+    debug:
+      msg: " name {{ username }} and age is {{ age }}"
