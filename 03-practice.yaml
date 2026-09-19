@@ -5,5 +5,5 @@
     name: "noor"
     son of: "Mahaboob subhani"
   tasks:
-  debug:
-    msg: " Hi, I am Shaik {{ name }} son of {{ son of }}" 
+  - debug:
+      msg: " Hi, I am Shaik {{ name }} son of {{ son of }}" 
