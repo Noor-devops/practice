@@ -1,0 +1,8 @@
+- name: ping the nodes
+  hosts:
+    local: 
+      ip: 172.31.30.179
+  connection: local
+  tasks:
+  - name: ping the server nodes
+    ping:
