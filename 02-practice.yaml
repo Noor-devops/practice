@@ -1,0 +1,7 @@
+- name: installing servers
+  hosts: nodes
+  tasks:
+  - name: Installling nginx servers
+    package:
+      name: nginx
+      state: present
