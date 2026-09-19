@@ -1,5 +1,6 @@
 - name: installing servers
   hosts: nodes
+  become: yes
   tasks:
   - name: Installling nginx servers
     package:
