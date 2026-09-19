@@ -1,0 +1,9 @@
+- name: demo on vars_files
+  hosts: local
+  connection: local
+  vars_files:
+  - afrin.yaml
+  tasks:
+  - name: demo on vars_files
+    debug:
+      msg: "Hi, iam {{ username }}"
