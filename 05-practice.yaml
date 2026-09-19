@@ -1,30 +1,30 @@
 - name: demo on promt
   hosts: localhost
   connection: local
-  vars_prompt:
-    - name: lovername
-      prompt: "enter your lover name"
-      private: false
-
-    - name: keepname
-      prompt: "enter your keep name"
-      private: true
-  tasks:
-  - name: print shahistha thaslim
-    debug:
-      msg: "Hi iam {{ lovername }} and my keepname  is {{ keepname }}"
-
-
-
   # vars_prompt:
-  #   - name: username
-  #     promt: "Please enter the username"
+  #   - name: lovername
+  #     prompt: "enter your lover name"
   #     private: false
 
-  #   - name: password
-  #     promt: "Please enter the password"
+  #   - name: keepname
+  #     prompt: "enter your keep name"
   #     private: true
   # tasks:
-  # - name: demo
+  # - name: print shahistha thaslim
   #   debug:
-  #     msg: "username is {{ username }} and password is {{ password }}"
+  #     msg: "Hi iam {{ lovername }} and my keepname  is {{ keepname }}"
+
+
+
+  vars_prompt:
+    - name: username
+      promt: "Please enter the username"
+      private: false
+
+    - name: password
+      promt: "Please enter the password"
+      private: true
+  tasks:
+  - name: demo
+    debug:
+      msg: "username is {{ username }} and password is {{ password }}"
