@@ -5,5 +5,8 @@
     name: "noor"
     son: "Mahaboob subhani"
   tasks:
+  - name: demo on task level variables
+    vars:
+      name: "shanu"
   - debug:
       msg: " Hi, I am Shaik {{ name }} son of {{ son }}" 
