@@ -1,7 +1,7 @@
 - name: ping the nodes
-  hosts: local
-  ip: 172.31.30.179
-  connection: local
+  hosts: 
+    nodes:
+      ip: 172.31.30.179
   tasks:
   - name: ping the server nodes
     ping:
