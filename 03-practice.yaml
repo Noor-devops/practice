@@ -3,7 +3,7 @@
   connection: local
   vars:
     name: "noor"
-    son of: "Mahaboob subhani"
+    son-of: "Mahaboob subhani"
   tasks:
   - debug:
-      msg: " Hi, I am Shaik {{ name }} son of {{ son of }}" 
+      msg: " Hi, I am Shaik {{ name }} son of {{ son-of }}" 
