@@ -8,5 +8,5 @@
   - name: demo on task level variables
     vars:
       name: "shanu"
-  - debug:
+    debug:
       msg: " Hi, I am Shaik {{ name }} son of {{ son }}" 
